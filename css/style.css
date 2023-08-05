@@ -1,0 +1,221 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+outline: none;
+}
+.container{
+margin: auto;
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+ul,ol{
+list-style: none;
+}
+li{
+text-decoration: none;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+.w-50{
+    max-width: 50%;
+    padding: 10px;
+}
+a{
+
+text-decoration: none;
+}
+.Lumanosimo{
+    font-family: 'Lumanosimo';
+}
+.Merriweather{
+    font-family: 'Merriweather';
+}
+.menu-name{
+    display: inline-block;
+    padding:10px 60px;
+    height: 100vh;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 55px;
+    transition: all 0.2s ease-out;
+    background-color: black;
+    display: flex;
+    text-align: center;
+}
+aside{
+    float: right;
+    width: 900px;
+    height: 100vh;
+}
+
+.menu-name li {
+    text-transform: capitalize;
+    padding: 5px 0px;   
+}
+.menu-name ul li a:hover{
+    border-bottom: 1px solid white;
+}
+.menu-name ul li a{
+    color: white;
+    cursor: pointer;
+}
+.menu-show{
+    visibility: visible;
+    right: 0px;
+}
+.toggle{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 10px 20px;
+    z-index: 99;
+}
+.from-name{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 10px 0px;
+}
+.div h2{
+    margin: 0px 10px;
+    margin-right: 10px;
+    text-transform: capitalize;
+    color: cornflowerblue;
+    padding: 10px 0px;
+    font-size: 15px;
+
+}
+.div h3{
+    margin: 0px 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: cornflowerblue;
+    text-transform: capitalize;
+    padding: 10px 0px;
+}
+h3:hover{
+    cursor: pointer;
+}
+.div{
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 20px;
+}
+ #login{
+    cursor: pointer;
+}
+#form{
+    background-color: rgba(18, 19, 19, 0.201);
+    position: absolute;
+    content: "";
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100vh;
+}
+#from #login-close{
+    display: inline-block;
+    margin-left: 155px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.fromopen{
+    visibility:visible;
+}
+
+#login-close{
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(250, 248, 248, 0.5);
+    border-radius: 100%;
+    cursor: pointer;
+    color: black;
+}
+.from-center{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#login-form{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.221);
+    backdrop-filter:blur(15px);
+    padding: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.432);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.703);
+    padding: 10px;
+}
+#login-form .from-logo i{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 100%;
+    font-size: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: translate(105px,-40px);
+    text-align: center;
+    animation: from-logo 2s infinite 2s;
+}
+.boxshadow{
+    box-shadow: 0px 0px 10px black;
+}
+
+.from-center .icon{
+    position: relative;
+}
+.from-center .icon::after{
+    position: absolute;
+    content: "\f00d";
+    font-family: "Font Awesome 6 free";
+    font-weight: 900;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: red;
+    top: -10px;
+    border-radius: 100%;
+    right: -110px;
+    z-index: 1;
+}
+#login-form .div-icon input{
+    padding: 5px 40px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 15px 0px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.div-btn button{
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 80px;
+    text-transform: uppercase;
+}
+
+.div-icon p{
+    padding: 0px 20px;
+    color: red;
+    font-size: 15px;
+}
