@@ -2,29 +2,9 @@
   "sing-up": [],
   "login": [
     {
-      "username": "jeel",
+      "username": "222",
       "password": "123456789",
       "id": 1
-    },
-    {
-      "username": "jeel",
-      "password": "12345678",
-      "id": 2
-    },
-    {
-      "username": "jeel",
-      "password": "1234567812",
-      "id": 3
-    },
-    {
-      "username": "jeel",
-      "password": "898067220989",
-      "id": 4
-    },
-    {
-      "username": "kamal",
-      "password": "9879715164",
-      "id": 5
     }
   ],
   "blog": []

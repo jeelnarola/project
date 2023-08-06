@@ -36,6 +36,14 @@ text-decoration: none;
 .Merriweather{
     font-family: 'Merriweather';
 }
+button{
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 15px;
+}
 .menu-name{
     display: inline-block;
     padding:10px 60px;
@@ -45,9 +53,11 @@ text-decoration: none;
     right: 0;
     top: 55px;
     transition: all 0.2s ease-out;
-    background-color: black;
+    background-color: white;
     display: flex;
     text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 0px 0px;
 }
 aside{
     float: right;
@@ -63,19 +73,23 @@ aside{
     border-bottom: 1px solid white;
 }
 .menu-name ul li a{
-    color: white;
+    color: black;
     cursor: pointer;
 }
 .menu-show{
     visibility: visible;
     right: 0px;
 }
-.toggle{
+#toggle{
     display: flex;
     justify-content: end;
     align-items: center;
     margin: 10px 20px;
     z-index: 99;
+    color: black;
+}
+.toggle i{
+    color: black;
 }
 .from-name{
     display: flex;
@@ -104,19 +118,20 @@ h3:hover{
     cursor: pointer;
 }
 .div{
-    background-color: black;
+    background-color: white;
     color: aliceblue;
     padding: 10px 20px;
 }
  #login{
     cursor: pointer;
 }
+
 #form{
     background-color: rgba(18, 19, 19, 0.201);
     position: absolute;
     content: "";
     visibility: hidden;
-    top: 0;
+    top: -20%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -171,6 +186,7 @@ h3:hover{
     transform: translate(105px,-40px);
     text-align: center;
     animation: from-logo 2s infinite 2s;
+    
 }
 .boxshadow{
     box-shadow: 0px 0px 10px black;
@@ -191,15 +207,16 @@ h3:hover{
     background-color: red;
     top: -10px;
     border-radius: 100%;
-    right: -110px;
+    right: -109px;
     z-index: 1;
 }
 #login-form .div-icon input{
     padding: 5px 40px;
-    padding-left: 10px;
+    padding-left: 32px;
     border: none;
     border-bottom: 1px solid black;
-    margin: 15px 0px;
+    /* margin: 15px 0px; */
+    margin: 25px 0px;
     margin-left: 10px;
     margin-bottom: 5px;
 }
@@ -213,9 +230,141 @@ h3:hover{
     margin-left: 80px;
     text-transform: uppercase;
 }
-
+.div-icon {
+    position: relative;
+}
 .div-icon p{
     padding: 0px 20px;
     color: red;
     font-size: 15px;
+}
+
+
+/* FROM ALL CSS */
+
+#loadfrom{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: none;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid black;
+    /* background-color: black; */
+}
+#loadfrom .load-icon {
+    margin: 20px;
+    position: relative;
+}
+#loadfrom .load-icon::after{
+    position: absolute;
+    content: "";
+    font-family: "Font Awesome 6 free";
+    font-weight: 900;
+    left: 0;
+    top: 20%;
+}
+#loadfrom .load-icon input{
+    padding: 10px 25px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+}
+#loadfrom .load-icon i{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 30%;
+    z-index: 1;
+    font-size: 15px;
+}
+#loadfrom button{
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-top: 40px;
+}
+/* #loadfrom i{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top:-10%;
+    right: 5px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.644);
+} */
+
+
+/* SING UP FROM */
+.singup-bg{
+    position: absolute;
+    top: 0;
+    background-color:rgba(255, 255, 255, 0.493);
+    height: 100vh;
+    width: 100%;
+    
+    display: none;
+}
+#singup-form{
+    width: 270px;
+    height: 350px;
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 20px;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+#singup-form input{
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+#singup-close{
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 100%;
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
+#sinup-form #singup-close:hover{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    cursor: pointer;
+}
+#singup{
+    cursor: pointer;
+}
+#singup-form .p ,#singup-form .p2 ,#singup-form .p3 ,#singup-form .p4 {
+    padding: 0px 0px;
+    color: red;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+#singup-form h3{
+    border: 1px dotted black;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }

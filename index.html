@@ -19,9 +19,9 @@
                    <div class="flex">
                     <div class="from-name">
                         <h3 id="login">login</h3>
-                       <h2>sing up</h2>
-                       </div>
-                    <div class="toggle Lumanosimo">
+                       <h2 id="singup">sing up</h2>
+                    </div>
+                    <div id="toggle">
                         <i class="fa-solid fa-bars"></i>
                     </div>
                    </div>
@@ -39,25 +39,59 @@
             </div>
         </div>
     </header>
-    <section  id="form">
-       <div class="from-center">
-        <div class="icon" id="icon"></div>
-        <form id="login-form">
-            <div class="from-logo">
-                <i class="fa-solid fa-user" class="form-login"></i>
+    <section class="form-bx">
+        <div id="form" class="form-bg">
+            <div class="from-center">
+             <div class="icon" id="icon"></div>
+             <form id="login-form">
+                 <div class="from-logo">
+                     <i class="fa-solid fa-user" class="form-login"></i>
+                 </div>
+                 <div class="div-icon">
+                     <input type="text" placeholder="name" id="username">
+                     <!-- <i class="fa-solid fa-user"></i> -->
+                     <p id="p"></p>
+                 </div>
+                 <div class="div-icon">
+                     <input type="text" placeholder="Enter Password" id="password">
+                     <!-- <i class="fa-solid fa-lock"></i> -->
+                     <p id="p2"></p>
+                 </div>  <div class="div-btn">
+                     <button id="submit" type="submit">submit</button>
+                 </div>
+             </form>
             </div>
-            <div class="div-icon">
-                <input type="text" placeholder="name" id="username"><i class="fa-solid fa-user"></i>
-                <p id="p"></p>
-            </div>
-            <div class="div-icon">
-                <input type="text" placeholder="Enter Password" id="password"><i class="fa-solid fa-user"></i>
-                <p id="p2"></p>
-            </div>  <div class="div-btn">
-                <button id="submit" type="submit">submit</button>
-            </div>
-        </form>
-       </div>
+        </div>
+    </section>
+    <section class="singup-bg" >
+        <div class="container">
+            <form action="" id="singup-form">
+               <div id="singup-close"><i class="fa-solid fa-xmark"></i></div>
+               <h3>SING-UP</h3>
+            <input type="text" name="" id="firstname" placeholder="first name"><p class="p"></p><br>
+            <input type="text" name="" id="lastname" placeholder="last name"><p class="p2"></p><br>
+            <input type="email" name="" id="email" placeholder=" email"><p class="p3"></p><br>
+            <input type="text" name="" id="password" placeholder="password"><p class="p4"></p><br>
+            <button type="submit" id="submit">submit</button>
+            <a href="index.html"></a>
+           </form>
+        </div>
+    </section>
+    <section>
+        <div class="loadfrom-bg">
+            <form id="loadfrom">
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+                <div class="load-icon">
+                    <input type="text" placeholder="Enetr A UserName"><i class="fa-solid fa-user"></i>
+                </div>
+                <div class="load-icon">
+                    <input type="password" placeholder="Enetr A Password" id="password" class="pass"><i class="fa-solid fa-eye"></i></i>
+                </div>
+                <div>
+                    <button type="submit" id="submit" value="submit">Submit</button>
+                </div>
+            </form>
+        </div>
     </section>
 </body>
 <script src="index.js"></script>
